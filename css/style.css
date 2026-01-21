@@ -13,3 +13,8 @@ table th, table td{
 table th{
     background-color: rgba(103, 170, 103, 0.733);
 }
+
+:root {
+    --eco-green: #2d5a27;
+    --eco-light: #f1f8f5;
+}

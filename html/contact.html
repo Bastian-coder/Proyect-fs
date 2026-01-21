@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Contacto - EcoMarket Chile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">EcoMarket</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -18,29 +21,110 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html"><i
+                                    class="fa-solid fa-house"></i> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.html"><i class="fa-solid fa-basket-shopping"></i> Productos</a>
+                            <a class="nav-link" href="products.html"><i class="fa-solid fa-basket-shopping"></i>
+                                Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contact.html"><i class="fa-regular fa-address-book"></i> Contacto</a>
+                            <a class="nav-link" href="contact.html"><i class="fa-regular fa-address-book"></i>
+                                Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+    <header class="py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Ponte en contacto</h1>
+            <p class="lead">¿Tienes dudas sobre nuestros packs Cerro Pochoco o Manquehue? Estamos aquí para ayudarte.</p>
+        </div>
     </header>
 
-    <main>
+    <main class="container my-5">
+        <div class="row g-5">
+            <section class="col-lg-7">
+                <div class="card shadow-sm p-4 border-0">
+                    <h2 class="h4 mb-4">Envíanos un mensaje</h2>
+                    <form action="#" method="POST">
+                        <div class="row g-3">
+                            <div class="col-xl-6">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" required minlength="3" placeholder="Ej: Javiera Montesinos">
+                            </div>
+                            <div class="col-xl-6">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required placeholder="nombre@ejemplo.cl">
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <select class="form-select" id="asunto" required>
+                                    <option value="">Selecciona una opción...</option>
+                                    <option value="pedido">Consulta sobre mi pedido</option>
+                                    <option value="productos">Información de productos sustentables</option>
+                                    <option value="sugerencia">Sugerencias o reclamos</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-12">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="5" required minlength="10" placeholder="¿En qué podemos ayudarte hoy?"></textarea>
+                            </div>
+                            <div class="col-xl-12 mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
+            <aside class="col-xl-5">
+                <div class="p-4 bg-eco-light rounded h-100" style="background-color: #f1f8f5;">
+                    <h2 class="h4 mb-4">Información de contacto</h2>
+                    <div class="d-flex mb-4">
+                        <i class="bi bi-geo-alt-fill text-success fs-3 me-3"></i>
+                        <div>
+                            <h6 class="mb-0">Ubicación</h6>
+                            <p class="text-muted">Barrio Italia, Santiago, Chile.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <i class="fa-regular fa-envelope text-success fs-3 me-3"></i>
+                        <div>
+                            <h6 class="mb-0">Email</h6>
+                            <p class="text-muted">hola@ecomarket.cl</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <i class="fa-regular fa-comment text-success fs-3 me-3"></i>
+                        <div>
+                            <h6 class="mb-0">WhatsApp</h6>
+                            <p class="text-muted">+56 9 1234 5678 (Lunes a Viernes)</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h5 class="mt-4">Nuestra Filosofía</h5>
+                    <p class="small text-muted">
+                        Al igual que nuestros productos **Pochoco** y **Manquehue**, respondemos con honestidad y compromiso ambiental. Priorizamos la comunicación digital para reducir el uso de papel en oficinas.
+                    </p>
+                </div>
+            </aside>
+        </div>
     </main>
 
-    <footer>
-
+    <footer style="background-color: rgba(103, 170, 103, 0.733); color: white; padding: 20px 0; margin-top: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <p>&copy; 2024 EcoMarket. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/176f8fa43a.js" crossorigin="anonymous"></script>
 </body>
 </html>
